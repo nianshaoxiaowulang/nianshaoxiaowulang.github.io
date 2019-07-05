@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>页面标题属性</title>
+</head>
+<link rel="stylesheet" href="../../CSS/ModeWindow.css">
+<body topmargin="0" leftmargin="0">
+<div align="center">
+  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+    <tr> 
+      <td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="15%"> <div align="right">页面标题</div></td>
+            <td> 
+              <textarea name="PageTitleBegin" cols="40" id="PageTitleBegin" style="width:100%;"></textarea></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td height="30"><div align="center"> 
+          <input type="button" onClick="InsertScript();" name="Submit2" value=" 确 定 ">
+          <input type="button" onClick="window.close();" name="Submit" value=" 取 消 ">
+        </div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+function InsertScript()
+{
+	var PageTitleBeginStr='';
+	PageTitleBeginStr=document.all.PageTitleBegin.value;
+	window.returnValue='{%=PageTitle("'+PageTitleBeginStr+'")%}';
+	window.close();
+}
+window.onunload=SetReturnValue;
+function SetReturnValue()
+{
+	if (typeof(window.returnValue)!='string') window.returnValue='';
+}
+</script>

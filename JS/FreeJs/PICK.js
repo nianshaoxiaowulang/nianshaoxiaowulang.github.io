@@ -1,0 +1,1 @@
+document.write('<table background="http://192.168.1.99/30free/Files/help/dot.gif" width="100%" border="0" cellpadding="0" cellspacing="2"><tr><td valign=middle><a class="" href=http://192.168.1.99/30free/Get/Innews/144939964.htm target=_self>×î´óÀÃ</a></td></tr><tr><td colspan="2" height="2" background=""></td></tr></table>');

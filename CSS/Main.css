@@ -1,0 +1,543 @@
+Body.EditNavigation
+{
+	background-color: #2961e7;
+}
+td.FolderResizeBar
+{
+	height: 6px;
+	background-image: url(darkblue_gradiant-nm.gif);
+	text-align: center;
+	vertical-align: bottom;
+}
+body.FolderIconBar
+{
+	background-image: url(lightblue_gradiant-nm.gif);
+}
+table.FolderToolbar
+{
+	height: 20px;
+	background-image: url(darkblue_gradiant-nm.gif);
+	vertical-align: middle;
+}
+body.FolderArea
+{
+	scrollbar-base-color: #7ba5d7;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	background-color: White;
+}
+.ToolbarImage-nm
+{
+	border: 0px;
+	height: 22px;
+	width: 22px;
+}
+.WorkareaToolbar-bk
+{
+	background-image: url(lightblue_gradiant-nm.gif);
+}
+.WorkareaTitlebar
+{
+	color : White;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+	line-height : 22px;
+	border : 1px solid black;
+	padding-left : 5px;
+	vertical-align : bottom;
+	background-image: url(darkblue_gradiant-nm.gif);
+}
+
+body.UiMain
+{
+	scrollbar-base-color: #7ba5d7;
+	font-size: 12px;
+	margin: 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: white;
+}
+
+
+TD {
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+A {
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+A:ACTIVE {
+	color : Red;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+A:VISITED {
+	color : Navy;
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}  
+.important {
+	color : Red;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	
+}
+TD.titlebar {
+	background-color : #214b95;
+	color : White;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+	line-height : 22px;
+	border : 1px solid White;
+	padding-left : 5px;
+	vertical-align : bottom;
+	
+}
+TD.titlebar-error {
+	background-color : red;
+	color : White;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+}
+HR {
+	background-color: #5c92b5;
+	color : #5c92b5;
+}
+TD.input-box-text {
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+	line-height : 20px;
+}
+TD.title-header, TR.title-header
+{
+	margin-top: 10px;
+	font-size: 12px;
+	color: black;
+	line-height: 16px;
+	border-bottom: gray thin solid;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #ece9d8;
+	white-space: nowrap;
+}
+A.title-header{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : black;
+}
+TD.info {
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+	line-height : 20px;
+}
+TD.info-header {
+	color : #5c92b5;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	padding-left : 5px;
+	line-height : 16px;
+	font-weight : bold;
+}
+TD.important {
+	color : Red;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+}
+TD.checkboxqustion{
+	background-color : #c0c0c0;
+	color : red;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+	line-height : 20px;
+	}
+TD.toolbar {
+	background-color : #c0c0c0;
+}
+TD.appname {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : white;
+	font-weight : bold;
+	text-indent : 5px;
+}
+
+/* Begin Calendar.asp */
+TD.cal-link{
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	text-align : center;
+}
+TR.cal-header {
+	background-color : Navy;
+	text-align : center;
+}
+TR.cal-header2 {
+	background-color : #C0C0C0;
+}
+TD.cal-header {
+	background-color : Navy;
+	text-align : center;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	color : white;
+}
+A.cal-header {
+	background-color : Navy;
+	text-align : center;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	color : white;
+}
+A:HOVER.cal-header, A:VISITED.cal-header {
+	background-color : Navy;
+	text-align : center;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	color : White;
+}
+
+A.cal-day-link {
+	text-align : center;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	color : navy;
+}
+A.cal-day-link2 {
+	text-align : center;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	color : navy;
+}
+
+INPUT.cal-submit {
+	background:#000084;
+	background-color: #000084;
+	font-family:Verdana;
+	font-size: 10pt;
+	font-weight: bold;
+	color: White;
+}
+/* End Calendar.asp */
+/*Begin Workarea */
+BODY.workarea {
+	background-color : #c0c0c0;
+}
+
+TABLE.workarea {
+	background-color : #c0c0c0;
+}
+TR.workarea {
+	background-color : #c0c0c0;
+}
+TD.workarea {
+	background-color : #c0c0c0;
+	
+}
+
+TABLE.WorkareaOffset {
+	margin-left : 2px;
+	width : 100%;
+}	
+
+/* End Workarea */
+
+/* Begin History */
+TD.history-list {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+A.history-listA.history-list:LINK, A.history-list:ACTIVE, A.history-list:HOVER, A.history-list:VISITED {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+A.history-list:VISITED{
+	color : Red;
+}
+/* End History */
+
+/* Begin Login */
+BODY.login {
+	background-color : #adc5ef;
+}
+/* End Login */
+/* Begin Folder Control */
+TD.folder {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	font-size : 10px;
+}
+A.folder {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	font-size : 10px;
+}
+A.folder:ACTIVE {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Red;
+	font-size : 10px;
+}
+A.folder:VISITED {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Navy;
+	font-size : 10px;
+}
+
+/* End Folder Control */
+.library {
+	background-color : #ADC5EF;
+}
+
+.moreinfo	{
+	color: blue;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	cursor:hand; 
+}
+TR.evenrow	{
+	background-color: #e4e4e4;
+}
+.pagetext {
+	FONT-SIZE: 8pt; 
+	COLOR: navy; 
+	FONT-FAMILY: verdana; 
+	ALIGN: LEFT; 
+	TEXT-DECORATION: none;
+}
+.headcell {
+	 padding-left: 5;
+	 line-height: .9;
+	 overflow: nowrap;
+	 FONT-SIZE: 8pt; 
+	 COLOR: navy; 
+	 FONT-FAMILY: verdana; 
+	 TEXT-DECORATION: none; 
+	 FONT-WEIGHT: bold; 
+	 ALIGN: LEFT; 
+	 BACKGROUND-COLOR: #fafad2;
+}
+A.headcell:hover {color:#FF3300; text-decoration: underline}
+.lbls
+{
+    COLOR: navy;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold
+}
+.label {
+	FONT-SIZE: 9pt; 
+	COLOR: navy; 
+	FONT-FAMILY: verdana; 
+	font-weight:bold;
+}
+td.ProgressEmptyBar
+{
+	background-color:Silver;
+	height:7.5pt;
+}
+td.ProgressHBar
+{
+	background-color: Blue;
+	height: 7.5pt;
+}
+.selectedTab {
+    background-color : transparent ;
+    border-right : #DDDDFF solid ;
+    border-top : #DDDDFF solid ;
+    border-left : #DDDDFF solid ;
+}
+.nonSelectedTab {
+	background-color : #DDDDFF ;
+	cursor : pointer ;
+}
+.nonSelectedTabNoLink {
+	background-color : #DDDDFF ;
+}
+.nonTabbed {
+	background-color : transparent ;
+	border-bottom : #DDDDFF solid ;
+}
+.TabContent {
+	background-color : transparent ;
+    border-right: #DDDDFF solid ;
+    border-bottom: #DDDDFF solid ;
+    border-left: #DDDDFF solid ;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px ;
+}
+.NoDisplayTabContent {
+	float : none ;
+	position : relative ;
+	display : none ;
+}
+.DisplayTabContent {
+	float : none ;
+	position : relative ;
+}
+.borderAll {
+	border-top: #DDDDFF solid ;
+	border-bottom: #DDDDFF solid ;
+    border-right: #DDDDFF solid ;
+    border-left: #DDDDFF solid ;
+}
+.noBG {
+	background : transparent ;
+}
+.yesBG {
+	background : #DDDDFF ;
+}
+.HLight {
+	font-weight : bold ;
+}
+.noHLight {
+	font-weight : normal ;
+}
+
+#dhtmltooltip{
+	position: absolute;
+	width: 150px;
+	border: 2px solid black;
+	padding: 2px;
+	background-color: #C1C1FF;
+	visibility: hidden;
+	z-index: 100;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+td.tab_actived
+{											
+	color:Navy;
+	cursor:hand;
+	border-left: solid 1 navy;													
+	border-top: solid 1 navy;
+	border-right: solid 1 navy;
+	background-color: white;
+}
+td.tab_disabled
+{
+	border: solid 1 navy;
+	color:Navy;
+	cursor:hand;						
+	background-color: #ADC5EF;
+}
+td.tab_last
+{			
+	cursor:default;									
+	background-color: white;								
+	border-bottom:solid 1 navy;											
+	
+}
+td.tab_spacer
+{			
+	cursor:default;									
+	background-color: white;								
+	border-bottom: solid 1 navy;
+}
+.trigger{
+	cursor: pointer;
+	cursor: hand;
+	display: block;
+}
+.handCur
+{
+	cursor: pointer;
+	cursor: hand;
+}
+.branch{
+	display: none;
+	margin-left: 20px;
+}
+/* New CSS    */
+.WorkareaToolbar-nm
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+.WorkareaToolbar-selectedOver
+{
+	border-right: 1px solid;
+	border-top: 1px solid;
+	font-size: 12px;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-color: Black;
+}
+td.FolderButtonBar
+{
+	vertical-align: middle;
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	font-size : 12px;
+	cursor: default;
+}
+td.FolderButtonBarOver
+{
+	vertical-align: middle;
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	font-size : 12px;
+	cursor: default;
+	background-image:none;
+	border: none;
+
+}
+td.FolderButtonBarSelected
+{
+	vertical-align: middle;
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	font-size : 12px;
+	cursor: default;
+	background-image: url(../images/ButtonSelectedBG.gif);
+}
+td.NavIconBar
+{
+	vertical-align: middle;
+	font-size : 12px;
+	cursor: default;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+td.NavIconBarOver
+{
+	vertical-align: middle;
+	font-size : 12px;
+	cursor: default;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #FFFFFF;
+}
+td.NavIconBarSelected
+{
+	vertical-align: middle;
+	font-size : 12px;
+	cursor: default;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #CC9900;
+}
+/* New CSS    */

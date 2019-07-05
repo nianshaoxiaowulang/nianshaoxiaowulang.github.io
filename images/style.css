@@ -1,0 +1,40 @@
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+a{text-decoration:none;font-size:9pt;COLOR: #333333}
+A:link {
+	text-decoration:none;font-size:9pt;COLOR: #333333
+}
+
+a:visited{
+                text-decoration:none;font-size:9pt;COLOR: #333333
+}
+a:hover{
+                color:#009933;text-decoration:underline}td{font-size:9pt;line-height:12pt;}
+
+.js{
+               color:#009933;font-weight:bold
+}
+
+
+a.js:link {
+	text-decoration:none;font-size:9pt;color:#009933;font-weight:bold
+}
+a.js:visited{
+                text-decoration:none;font-size:9pt;COLOR: #009933
+}
+
+a.news:link {
+	text-decoration:none;FONT-SIZE: 14px;COLOR: #333333
+
+}
+
+
+
+
+
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 12pt
+}
+.news {
+	FONT-SIZE: 14px; LINE-HEIGHT: 22px
+}

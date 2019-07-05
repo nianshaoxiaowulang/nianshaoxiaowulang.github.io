@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>下载列表标签属性</title>
+</head>
+<link rel="stylesheet" href="../../CSS/ModeWindow.css">
+<script language="JavaScript" src="../SysJS/PublicJS.js"></script>
+<body topmargin="0" leftmargin="0">
+<div align="center"> 
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td height="30" colspan="2"> <div align="center">插入字段 
+          <select style="width:70%;" name="InsertFun" onChange="SetPicParaStatus(this);">
+            <option value="" selected>选择插入的字段</option>
+            <option value="{DownLoad_Name}">下载名称</option>
+            <option value="{DownLoad_Version}">版本</option>
+            <option value="{DownLoad_Types}">下载类型</option>
+            <option value="{DownLoad_ClickNum}">下载次数</option>
+            <option value="{DownLoad_Language}">语言</option>
+            <option value="{DownLoad_Accredit}">授权</option>
+            <option value="{DownLoad_FileSize}">文件大小</option>
+            <option value="{DownLoad_Appraise}">评价</option>
+            <option value="{DownLoad_SystemType}">系统平台</option>
+            <option value="{DownLoad_EMail}">联系人EMAIL</option>
+            <option value="{DownLoad_ProviderUrl}">提供者Url地址</option>
+            <option value="{DownLoad_Provider}">开发商</option>
+            <option value="{DownLoad_Pic}">显示图片</option>
+            <option value="{DownLoad_Description}">简介</option>
+            <option value="{DownLoad_PassWord}">解压密码</option>
+            <option value="{DownLoad_AddTime}">添加时间</option>
+            <option value="{DownLoad_EditTime}">修改时间</option>
+            <option value="{DownLoad_Address}">下载地址</option>
+            <option value="{DownLoad_ReviewContent}">显示评论</option>
+            <option value="{DownLoad_Review}">发表评论</option>
+		  </select>
+        </div></td>
+    </tr>
+    <tr>
+      <td height="30"><div align="center">图片宽度 
+          <input name="PicWidth" type="text" id="PicWidth" size="6" disabled>
+        </div></td>
+      <td height="30"><div align="center">图片高度 
+          <input name="PicHeight" type="text" id="PicHeight" size="6" disabled>
+        </div></td>
+    </tr>
+    <tr> 
+      <td width="50%" height="50"> <div align="center"> 
+          <input name="Submitdd" onClick="InsertScript(document.all.InsertFun);" type="button" id="Submitdd" value=" 插 入 ">
+        </div></td>
+      <td><div align="center"> 
+          <input type="button" onClick="window.close();" name="Submit2" value=" 取 消 ">
+        </div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+<script>
+function InsertScript(Obj)
+{
+	var TempStr=Obj.value;
+	var PicWidthStr=document.all.PicWidth.value,PicHeightStr=document.all.PicHeight.value;
+	if (PicWidthStr=='') PicWidthStr='60';
+	if (PicHeightStr=='') PicHeightStr='60';
+	if (TempStr=='{DownLoad_Pic}')
+	{
+		TempStr='{%=DownLoad_Pic("'+PicWidthStr+'","'+PicHeightStr+'")%}';
+	}
+	window.returnValue=TempStr;
+	window.close();
+}
+function SetPicParaStatus(Obj)
+{
+	if (Obj.value!='{DownLoad_Pic}')
+	{
+		document.all.PicWidth.disabled=true;
+		document.all.PicHeight.disabled=true
+	}
+	else
+	{
+		document.all.PicWidth.disabled=false;
+		document.all.PicHeight.disabled=false;
+	}
+}
+window.onunload=SetReturnValue;
+function SetReturnValue()
+{
+	if (typeof(window.returnValue)!='string') window.returnValue='';
+}
+</script>
+

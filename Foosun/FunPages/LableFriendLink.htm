@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>友情链接属性</title>
+</head>
+<link rel="stylesheet" href="../../CSS/ModeWindow.css">
+<body topmargin="0" leftmargin="0" scroll=no>
+<div align="center">
+  <table width="96%" border="0" cellspacing="5" cellpadding="0">
+    <tr> 
+      <td width="48%"><div align="center">链接类型 
+          <select name="LinkType" id="LinkType" style="width:70%;">
+            <option value="0" selected>文字链接</option>
+            <option value="1">图片链接</option>
+          </select>
+        </div></td>
+      <td width="52%"><div align="center">链接字数 
+          <input name="TitleNumber" type="text" style="width:70%;" id="TitleNumber" value="10">
+        </div></td>
+    </tr>
+    <tr> 
+      <td> <div align="center">图片宽度 
+          <input name="PicWidth" type="text" id="PicWidth" value="60" style="width:70%;">
+        </div></td>
+      <td> <div align="center">图片高度 
+          <input name="PicHeight" type="text" id="PicHeight2" value="60" style="width:70%;">
+        </div></td>
+    </tr>
+    <tr> 
+      <td><div align="center">调用数量 
+          <input name="LinkNumber" type="text" id="LinkNumber2" style="width:70%;" value="10">
+        </div></td>
+      <td><div align="center">显示列数 
+          <input name="RowNumber" type="text" style="width:70%;" id="RowNumber" value="1" width=20>
+        </div></td>
+    </tr>
+    <tr> 
+      <td><div align="center">链接行距 
+          <input name="RowHeight" type="text" style="width:70%;" id="RowHeight2" value="20">
+        </div></td>
+      <td><div align="center">新开窗口 
+          <select name="NewWindowTF" id="NewWindowTF" style="width:70%;">
+            <option value="0" selected>否</option>
+            <option value="1" >是</option>
+          </select>
+        </div></td>
+    </tr>
+    <tr> 
+      <td colspan="2">
+<div align="center"> 
+          <input type="button" onClick="InsertScript();" name="Submit" value=" 确 定 ">
+          <input type="button" onClick="window.close();" name="Submit2" value=" 取 消 ">
+        </div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+function InsertScript()
+{
+	var LinkTypeStr='';
+	if (document.all.LinkType.value=='1') LinkTypeStr='1';
+	else LinkTypeStr='0';
+	var TitleNumberStr='';
+	if (document.all.TitleNumber.value=='') PicWidthStr='10';
+	else TitleNumberStr=document.all.TitleNumber.value;
+	var PicWidthStr='';
+	if (document.all.PicWidth.value=='') PicWidthStr='60';
+	else PicWidthStr=document.all.PicWidth.value;
+	var PicHeightStr='';
+	if (document.all.PicHeight.value=='') PicHeightStr='60';
+	else PicHeightStr=document.all.PicHeight.value;
+	var LinkNumberStr='';
+	if (document.all.LinkNumber.value=='') LinkNumberStr='10';
+	else LinkNumberStr=document.all.LinkNumber.value;
+	var RowNumberStr='';
+	if (document.all.RowNumber.value=='') RowNumberStr='1';
+	else RowNumberStr=document.all.RowNumber.value;
+	var RowHeightStr='';
+	if (document.all.RowHeight.value=='') RowHeightStr='20';
+	else RowHeightStr=document.all.RowHeight.value;
+	var NewWindowTF = '';
+	NewWindowTF=document.all.NewWindowTF.value;
+	window.returnValue='{%=FriendLink("'+LinkTypeStr+'","'+TitleNumberStr+'","'+PicWidthStr+'","'+PicHeightStr+'","'+LinkNumberStr+'","'+RowNumberStr+'","'+RowHeightStr+'","'+NewWindowTF+'")%}';
+	window.close();
+}
+window.onunload=SetReturnValue;
+function SetReturnValue()
+{
+	if (typeof(window.returnValue)!='string') window.returnValue='';
+}
+</script>

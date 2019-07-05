@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="../../CSS/FS_css.css" rel="stylesheet">
+<title>无标题文档</title>
+</head>
+<body onclick="Resize();" topmargin="0" leftmargin="0" oncontextmenu="return false;" onselectstart="return false;">
+<table title="帮助窗口" width="100%" height="13" border="0" cellpadding="0" cellspacing="0" bgcolor="#E4E4E4">
+  <tr> 
+    <td height="8" align="center" valign="middle" id="ResizeBar" style="CURSOR:hand;" ondragstart="return false;"><img id="ResizeBarImg" src="../Images/down.gif" width="9" height="9" border="0" align="middle" style="CURSOR:hand;" ondragstart="return false;"></td>
+  </tr>
+</table>
+</body>
+</html>
+<script language="JavaScript">
+function Resize()
+{
+	var bodySize=top.GetFSHelpObject().parent.document.getElementById("nav_divider").rows;
+	var frameSizes=bodySize.split(",");
+	var FSHelpFrameHeight=parseInt(frameSizes[3]);
+	if (FSHelpFrameHeight>100) {top.ResizeFrame(1);document.all.ResizeBarImg.src='../Images/up.gif';}
+	else  {top.ResizeFrame(0);;document.all.ResizeBarImg.src='../Images/down.gif';}
+}
+</script>

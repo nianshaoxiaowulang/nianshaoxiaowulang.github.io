@@ -1,0 +1,34 @@
+BODY{
+font-family:  "Geneva, Arial, Helvetica, sans-serif";
+color:#2E2E2E;font-size:11.5px;
+background-position: center;
+text-decoration: none;
+scrollbar-face-color: #f6f6f6;
+scrollbar-highlight-color: #ffffff; scrollbar-shadow-color: #cccccc; scrollbar-3dlight-color: #cccccc; scrollbar-arrow-color: #000000; scrollbar-track-color: #EFEFEF; scrollbar-darkshadow-color: #ffffff;
+}
+TD{font-family:  "Geneva, Arial, Helvetica, sans-serif";color:#000000;font-size:11.5px}
+.f4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11.5px; COLOR: #ff6633; LINE-HEIGHT: normal; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.f41 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11.5px; COLOR: #000000; LINE-HEIGHT: normal; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+A:link {
+	font-family:  "Geneva, Arial, Helvetica, sans-serif";color:#000000;font-size:11.5px; TEXT-DECORATION: none
+}
+A:visited {
+	font-family:  "Geneva, Arial, Helvetica, sans-serif";color:#000000;font-size:11.5px;  TEXT-DECORATION: none
+}
+A:hover {
+	font-family:  "Geneva, Arial, Helvetica, sans-serif";color:#FF0000;font-size:11.5px;  TEXT-DECORATION: none
+}
+A:active {
+	font-family:  "Geneva, Arial, Helvetica, sans-serif";color:#000000;font-size:11.5px;  TEXT-DECORATION: underline
+}
+.input,.textarea {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid; font-family:  "Geneva, Arial, Helvetica, sans-serif";FONT-SIZE: 11.5px; BORDER-LEFT: #000000 1px solid; COLOR: #ff6633; BORDER-BOTTOM: #cccccc 1px solid; 
+}
+.button {
+	BORDER-RIGHT: #521b01 1px solid; BORDER-TOP: #ffa439 1px solid; font-family:  "Geneva, Arial, Helvetica, sans-serif";FONT-SIZE: 11.5px; BACKGROUND: #ff6633; BORDER-LEFT: #ffa439 1px solid; COLOR: #ffffff; PADDING-TOP: 2px; BORDER-BOTTOM: #521b01 1px solid
+}
+.sTITLE	{font-size: 18px; line-height: 160%; color: #ff0000;font-weight: bold}

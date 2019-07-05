@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>滚动新闻属性</title>
+</head>
+<link rel="stylesheet" href="../../CSS/ModeWindow.css">
+<script language="JavaScript" src="../SysJS/PublicJS.js"></script>
+<body topmargin="0" leftmargin="0" scorll=no>
+<div align="center">
+  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td width="50%" height="30"> <div align="center">滚动数量 
+          <input name="MarqueeNumber" type="text" id="MarqueeNumber"  style="width:70%;" value="10">
+        </div></td>
+      <td>新闻列数 
+        <input name="MarqueeRowNumber" type="text" id="MarqueeRowNumber2"  style="width:70%;" value="1"> 
+      </td>
+    </tr>
+    <tr> 
+      <td height="30"><div align="center">标题字数 
+          <input name="TitleNumber"  style="width:70%;" type="text" id="TitleNumber" value="30">
+        </div></td>
+      <td>日期格式 
+        <select  style="width:70%;" name="DateRule" id="select2">
+          <option selected>选择日期格式</option>
+          <option value="1">2003-9-1</option>
+          <option value="2">2003.9.1</option>
+          <option value="3">2003/9/1</option>
+          <option value="4">9/1/2003</option>
+          <option value="5">1/9/2004</option>
+          <option value="6">9-1-2004</option>
+          <option value="7">9.1.2004</option>
+          <option value="8">9-1</option>
+          <option value="9">9/1</option>
+          <option value="10">9.1</option>
+          <option value="11">9月1</option>
+          <option value="12">1日11时</option>
+          <option value="13">1日11点</option>
+          <option value="14">11时11分</option>
+          <option value="15">11:11</option>
+          <option value="16">2004年9月1日</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td height="30"><div align="center">滚动宽度 
+          <input name="MarqueeWidth" id="MarqueeWidth" type="text"  style="width:70%;" value="100">
+        </div></td>
+      <td>滚动高度 
+        <input name="MarqueeHeight" id="MarqueeHeight2" type="text"  style="width:70%;" value="20"></td>
+    </tr>
+    <tr> 
+      <td height="30"><div align="center">滚动速度 
+          <input name="MarqueeSpeed" type="text" id="MarqueeSpeed"  style="width:70%;" value="6">
+        </div></td>
+      <td>滚动方式 
+        <select  style="width:70%;" name="MarqueeType" id="select">
+          <option value="left" selected>向左</option>
+          <option value="right">向右</option>
+          <option value="down">向下</option>
+          <option value="up">向上</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td height="30"><div align="center">弹出窗口 
+          <select  style="width:70%;" name="OpenType">
+            <option value="0" selected>否</option>
+            <option value="1">是</option>
+          </select>
+        </div></td>
+      <td>标题样式
+<input type="text"  style="width:70%;" name="CSSStyle"></td>
+    </tr>
+    <tr> 
+      <td height="30"> <div align="center"> 
+          <input type="button" name="Submit" onClick="InsertScript();" value=" 确 定 "></div></td>
+      <td><div align="center">
+          <input type="button" name="Submit2" onClick="window.close();" value=" 取 消 ">
+        </div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+function InsertScript()
+{
+	var MarqueeNumberStr='';
+	if (document.all.MarqueeNumber.value=='') MarqueeNumberStr='10';
+	else MarqueeNumberStr=document.all.MarqueeNumber.value;
+	var TitleNumberStr='';
+	if (document.all.TitleNumber.value=='') TitleNumberStr='10';
+	else TitleNumberStr=document.all.TitleNumber.value;
+	var MarqueeRowNumberStr='';
+	if (document.all.MarqueeRowNumber.value=='') MarqueeRowNumberStr='10';
+	else MarqueeRowNumberStr=document.all.MarqueeRowNumber.value;
+	var MarqueeWidthStr='';
+	if (document.all.MarqueeWidth.value=='') MarqueeWidthStr='10';
+	else MarqueeWidthStr=document.all.MarqueeWidth.value;
+	var MarqueeHeightStr='';
+	if (document.all.MarqueeHeight.value=='') MarqueeHeightStr='10';
+	else MarqueeHeightStr=document.all.MarqueeHeight.value;
+	var MarqueeSpeedStr='';
+	if (document.all.MarqueeSpeed.value=='') MarqueeSpeedStr='10';
+	else MarqueeSpeedStr=document.all.MarqueeSpeed.value;
+	var MarqueeTypeStr=document.all.MarqueeType.value;
+	var DateRuleStr=document.all.DateRule.value;
+	var OpenTypeStr=document.all.OpenType.value;
+	var CSSStyleStr=document.all.CSSStyle.value;
+	window.returnValue='{%=MarqueeNews("'+MarqueeNumberStr+'","'+TitleNumberStr+'","'+MarqueeRowNumberStr+'","'+MarqueeWidthStr+'","'+MarqueeHeightStr+'","'+MarqueeSpeedStr+'","'+MarqueeTypeStr+'","'+DateRuleStr+'","'+OpenTypeStr+'","'+CSSStyleStr+'")%}';
+	window.close();
+}
+window.onunload=SetReturnValue;
+function SetReturnValue()
+{
+	if (typeof(window.returnValue)!='string') window.returnValue='';
+}
+</script>

@@ -1,0 +1,66 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:#000000;
+	font-family: Tahoma;
+	font-size: 12px;
+	border: #FF0000;
+	line-height: 2.0;
+	line-height: 24px;
+	background-color: #FFFFFF;
+}
+div {
+	font-family:  "Tahoma";
+	font-size: 11.5px;
+}
+thead {
+	color:#FFFFFF;
+	text-align:center;
+}
+
+td {
+	font-size: 11.5px;
+	font-family:  Tahoma;
+	line-height: 1.5;
+}
+table {
+	font-size: 11.5px;
+	font-family:  Tahoma;
+	line-height: 1.5;
+	border:0;
+	border-collapse:collapse;
+}
+p {
+	font-family: "Tahoma";
+	font-size: 11.5px;
+}
+input {
+	font-size: 11.5px;
+	font-family:  Tahoma;
+}
+
+a:link {
+	color: #444444;
+	filter: DropShadow(Color=FFFFFF, OffX=1, OffY=1, Positive=2);
+	text-decoration: none;
+}
+a:visited {
+	color: #444444;
+	filter: DropShadow(Color=FFFFFF, OffX=1, OffY=1, Positive=2);
+	text-decoration: none;
+}
+a:hover {
+	color:#b21818;
+	filter: DropShadow(Color=FFFFFF, OffX=1, OffY=1, Positive=2);
+	text-decoration: none;
+}
+a:active {
+	color: #444444;
+	filter: DropShadow(Color=FFFFFF, OffX=1, OffY=1, Positive=2);
+	text-decoration: none;
+}
+.MenuDIV {
+	height:expression(document.body.clientHeight);
+}
